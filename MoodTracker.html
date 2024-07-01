@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        <label for="mood">How's your mood today?</label>
+        <select id="mood" name="mood">
+            <option value="happy">Happy</option>
+            <option value="neutral">Neutral</option>
+            <option value="sad">Sad</option>
+        </select>
+        <button id="addMood">Add Mood</button>
+        <h2>Your Mood History</h2>
+        <ul id="moodHistory"></ul>
+    </div>
+
+    <script>
+        // Function to add mood to the list
+        function addMood() {
+            const mood = document.getElementById("mood").value;
+            const moodHistory = document.getElementById("moodHistory");
+
+            const listItem = document.createElement("li");
+            listItem.textContent = `Mood: ${mood} (Time: ${new Date().toLocaleString()})`;
+            moodHistory.appendChild(listItem);
+
+            // Save mood to local storage
+            const moods = JSON.parse(localStorage.getItem("moods")) || [];
+            moods.push({ mood, time: new Date() });
+            localStorage.setItem("moods", JSON.stringify(moods));
+        }
+
+        // Load mood history from local storage on page load
+        function loadMoodHistory() {
+            const moodHistory = document.getElementById("moodHistory");
+            const moods = JSON.parse(localStorage.getItem("moods")) || [];
+
+            moods.forEach(mood => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `Mood: ${mood.mood} (Time: ${new Date(mood.time).toLocaleString()})`;
+                moodHistory.appendChild(listItem);
+            });
+        }
+
+        document.getElementById("addMood").addEventListener("click", addMood);
+        loadMoodHistory();
+    </script>
+</body>
+</html>

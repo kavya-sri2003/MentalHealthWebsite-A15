@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main {
+    background-image: url("https://th.bing.com/th/id/R.df0b006de47e3fecb6391d823003b10b?rik=dzzQxpMXVHFZKQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fdK8SG7i.jpg&ehk=4XTydkcebP9SFcQv%2bUuRS1jnFFZtB2OGyguEyPyETRI%3d&risl=&pid=ImgRaw&r=0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    
+    
+  }
+
+
+.card {
+    width: 350px;
+    height: 200px;
+    background-image: 
+    url("https://assets.codepen.io/13471/sparkles.gif");
+    opacity: .55;
+    background-position: 50% 50%;
+    background-size: 160%;
+    border-radius: 10px;
+    
+  }
+
+
+.card > div {
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+
+button {
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: black;
+    color: white;
+}
+
+button:hover {
+    background: transparent;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .1s;
+    background: white;
+    color: #000;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px white;
+}

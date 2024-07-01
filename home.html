@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:url("https://getwallpapers.com/wallpaper/full/5/c/5/1516000-top-mental-health-wallpaper-2560x1400-download-free.jpg");
+  position :fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  height: 500px;
+  display: flex;
+  min-width: 400px;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: -55px;
+}
+.icon-image{
+  position: relative;
+  height: 70px;
+  width: 70px;
+  margin: 0 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background: #fff;
+}
+.icon-image .icon img{
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0396FF;
+}
+.icon-image::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+}
+.icon-image .hover-image{
+  position: absolute;
+  height: 350px;
+  width: 300px;
+  bottom: 100px;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  pointer-events: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease, z-index 0s, left 0.5s ease ;
+  transition-delay: 0s, 0.5s, 0.5s;
+}
+.icon-image:hover .hover-image{
+  left: -200px;
+  z-index: 12;
+  transform: translateX(80px);
+  transition: left 0.5s ease, z-index 0s, transform 0.5s ease;
+  transition-delay: 0s, 0.5s, 0.5s;
+}
+.hover-image img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 25px;
+}
+.hover-image .content{
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  padding: 0 10px;
+}
+.content::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  left: 50%;
+  bottom: -7px;
+  transform: rotate(45deg) translateX(-50%);
+  z-index: -1;
+}
+.content .details{
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+.icon-image:hover .details{
+  transition: all 0.5s ease;
+  transition-delay: 0.9s;
+  opacity: 1;
+  transform: translateY(4px);
+  pointer-events: auto;
+}
+.details::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  left: 50%;
+  bottom: -15px;
+  transform: rotate(45deg) translateX(-50%);
+  z-index: -1;
+}
+.content .details .name{
+ font-size: 20px;
+ font-weight: 500;
+ font style: italics;
+}
+.content .details .job{
+ font-size: 17px;
+ color: #0396FF;
+ margin: -3px 0 5px 0;
+}
+.content .details a:hover{
+  color: #0396FF;
+}
+.container .last .hover-image{
+  transition: none;
+}
+.container .last:hover .hover-image{
+  transition: 0;
+}
+.last:hover .details{
+  transition-delay: 0s;
+}
+  </style>
+    <meta charset="UTF-8" />
+    <title>ThePathToReleifStress</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<div class="container">
+      <div class="icon-image">
+        <div class="icon">
+          <img src="https://www.stephtranter.com/wp-content/themes/stephtranter/images/workshop-emotions.png" alt="" />
+        </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="https://www.stephtranter.com/wp-content/themes/stephtranter/images/workshop-emotions.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">MOODIFY</div>
+              <div class="job"><a href="file:///C:/Users/kalpu/Desktop/MHGHappilo/MoodTracker.html">#Sensing</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="icon-image">
+        <div class="icon">
+          <img src="https://th.bing.com/th/id/OIP.wkB2c7Cy-Yxvigk0tXveEQAAAA?pid=ImgDet&rs=1.jpg" alt="" />
+        </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="https://th.bing.com/th/id/OIP.wkB2c7Cy-Yxvigk0tXveEQAAAA?pid=ImgDet&rs=1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">AFFIRMTION CARDS</div>
+              <div class="job"><a href="file:///C:/Users/kalpu/Desktop/MHGHappilo/card.html">#Motivation</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon-image">
+        <div class="icon">
+          <img src="https://thumbs.dreamstime.com/b/abstract-party-design-5390405.jpg" alt="" />
+        </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="https://thumbs.dreamstime.com/b/abstract-party-design-5390405.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">MUSIC</div>
+              <div class="job"><a href="file:///C:/Users/kalpu/Desktop/MHGHappilo/index.html">#Pleasure</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon-image">
+        <div class="icon">
+          <img src="https://i.pinimg.com/originals/32/1f/37/321f377ca1e1d75581f2cf854ffa1092.png" alt="" />
+        </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="https://i.pinimg.com/originals/32/1f/37/321f377ca1e1d75581f2cf854ffa1092.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">GAME</div>
+              <div class="job">
+                 <a href="file:///C:/Users/kalpu/Desktop/MHGHappilo/Games.html">#Relieves Anxiety</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icon-image">
+        <div class="icon">
+          <img src="https://th.bing.com/th/id/R.12203dcf73f28dead98054f8b1bd0a63?rik=0xmC4mZnIsgLtQ&riu=http%3a%2f%2fwww.calltojoy.com%2fwp-content%2fuploads%2f2015%2f12%2fcall-to-joy-woman.jpg&ehk=i5GX6DVCEJQDzSEIqBpotNgV8HXVNXlNjluPqIPgFzM%3d&risl=&pid=ImgRaw&r=0.jpg" alt="" />
+        </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="https://th.bing.com/th/id/R.12203dcf73f28dead98054f8b1bd0a63?rik=0xmC4mZnIsgLtQ&riu=http%3a%2f%2fwww.calltojoy.com%2fwp-content%2fuploads%2f2015%2f12%2fcall-to-joy-woman.jpg&ehk=i5GX6DVCEJQDzSEIqBpotNgV8HXVNXlNjluPqIPgFzM%3d&risl=&pid=ImgRaw&r=0.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">YOGA</div>
+              <div class="job"><a href="file:///C:/Users/kalpu/Desktop/MHGHappilo/youtube.html">#Relaxation</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+<div class="icon-image">
+        <div class="icon">
+          <img src="https://th.bing.com/th/id/R.d1e90b12895dbb675975d91dc3e0e647?rik=Er5xNLFhS36KkA&riu=http%3a%2f%2fmiam-images.m.i.pic.centerblog.net%2f2464664a.png&ehk=rbln3q%2fT6zLd5EJsL4y95pkwLLOELloy03uNrDL60oQ%3d&risl=&pid=ImgRaw&r=0.png" alt="" />
+        </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="https://th.bing.com/th/id/R.d1e90b12895dbb675975d91dc3e0e647?rik=Er5xNLFhS36KkA&riu=http%3a%2f%2fmiam-images.m.i.pic.centerblog.net%2f2464664a.png&ehk=rbln3q%2fT6zLd5EJsL4y95pkwLLOELloy03uNrDL60oQ%3d&risl=&pid=ImgRaw&r=0.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">SCRAPPY</div>
+              <div class="job"><a href="file:///C:/Users/kalpu/Desktop/MHGHappilo/scrappy.html">#Entertainment</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="icon-image">
+        <div class="icon">
+          <img src="https://th.bing.com/th/id/OIP.WXOFfvkzGxLerYEe_42t1gHaHa?pid=ImgDet&w=960&h=960&rs=1.png" alt="" />
+        </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="https://th.bing.com/th/id/OIP.WXOFfvkzGxLerYEe_42t1gHaHa?pid=ImgDet&w=960&h=960&rs=1.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">NOTIFY</div>
+              <div class="job"><a href="file:///C:/Users/kalpu/Desktop/MHGHappilo/MoodTrackerApp-main/MoodTrackerApp-main/main_page.html">#Noted</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+ <div class="icon-image">
+        <div class="icon">
+          <img src="https://th.bing.com/th/id/R.423383c381706bc870ee309c7d3076f9?rik=EWsnxT6Qwn6q6A&riu=http%3a%2f%2fddi-dev.com%2fuploads%2fmedia%2fnews%2f0001%2f02%2f584668831a98d094bf9ceb0a533d0984149e044f.jpeg&ehk=LZ4kSAzJj%2fD5zReIP86GojERXqsDehNZTJxdtNFWnpE%3d&risl=&pid=ImgRaw&r=0.png" alt="" />
+        </div>
+        <div class="hover-image one">
+          <div class="img">
+            <img src="https://th.bing.com/th/id/R.423383c381706bc870ee309c7d3076f9?rik=EWsnxT6Qwn6q6A&riu=http%3a%2f%2fddi-dev.com%2fuploads%2fmedia%2fnews%2f0001%2f02%2f584668831a98d094bf9ceb0a533d0984149e044f.jpeg&ehk=LZ4kSAzJj%2fD5zReIP86GojERXqsDehNZTJxdtNFWnpE%3d&risl=&pid=ImgRaw&r=0.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <div class="name">ChatBot</div>
+              <div class="job"><a href="file:///C:/Users/kalpu/Desktop/MHGHappilo/ChatBot.html">#ComeOn</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
